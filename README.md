@@ -49,7 +49,7 @@ We  provide a sample setting up script as following:
 - cuDNN version >= 7.4.2
 
 #### Step-by-step Installation
-
+```
 conda create -n SCinstanceseg python=3.7 -y
 source activate SCinstanceseg
 pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 -f https://download.pytorch.org/whl/torch_stable.html
@@ -73,6 +73,7 @@ cd $INSTALL_DIR
 git clone https://github.com/cocodataset/cocoapi.git
 cd cocoapi/PythonAPI
 python setup.py build_ext install
+```
 
 
 #### Download
