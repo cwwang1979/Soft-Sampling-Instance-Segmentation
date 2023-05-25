@@ -45,8 +45,6 @@ We  provide a sample setting up script as following:
 - RAM >= 16 GB
 - GPU Memory >= 6 GB
 - GPU driver version >= 410.48
-- CUDA version >= 10.0
-- cuDNN version >= 7.4.2
 
 #### Step-by-step Installation
 ```
@@ -73,8 +71,11 @@ cd $INSTALL_DIR
 git clone https://github.com/cocodataset/cocoapi.git
 cd cocoapi/PythonAPI
 python setup.py build_ext install
-```
 
+cd SS-cascade_instance_segmentation  # set up instance segmentation
+pip install -v -e . 
+
+```
 
 #### Download
 Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1_2pU3tUDzkk_vraTsqM8aVfMjO0VjhJl/view?usp=sharing) file.  (For reviewers, please use the manuscript number M...........R1 as the password to decompress the file.)
