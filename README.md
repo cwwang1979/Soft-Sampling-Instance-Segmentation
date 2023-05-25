@@ -1,4 +1,4 @@
-# Soft-Sampling Cascade Deep Learning
+# Soft-Sampling Cascade Instance segmentation
 
 <img width="1299" src="name.png">
 
