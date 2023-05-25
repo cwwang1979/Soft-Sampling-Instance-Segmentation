@@ -1,6 +1,6 @@
 # Soft-Sampling Cascade Instance segmentation
 
-<img width="1299" src="name.png">
+<img width="1299" src="CMRCNN_architecture.png.png">
 
 ## Associated paper
 Wang C.*, Huang S., Lee Y., Shen Y., Meng S., Gaol J.(2022) Deep Learning for Bone Marrow Cell Detection and Classification on Whole-Slide Images, Medical Image Analysis, vol 75, 102270, 1-15 (SCI IF=13.828, 2/113 COMP. SCI., INTER. APP.). 
