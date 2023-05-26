@@ -2,7 +2,7 @@
 
 <img width="1299" src="CMRCNN_architecture.png">
 
-## Associated paper
+<!-- ## Associated paper
 Wang C.*, Huang S., Lee Y., Shen Y., Meng S., Gaol J.(2022) Deep Learning for Bone Marrow Cell Detection and Classification on Whole-Slide Images, Medical Image Analysis, vol 75, 102270, 1-15 (SCI IF=13.828, 2/113 COMP. SCI., INTER. APP.). 
 If you use any materials here, please cite our publication.  
 
@@ -34,7 +34,12 @@ AI inference process and results as follows with demo data 1M14.mrxs.
 - **Data extraction time:** 6 seconds
 - **AI Inference time:** 94 seconds
 
-In the workstation demo, the WSI file is stored locally, and hence the data extraction time takes less than the cloud demo.
+In the workstation demo, the WSI file is stored locally, and hence the data extraction time takes less than the cloud demo. -->
+
+## Available hardware
+- **CPU:** Intel® Core™ i7-8700K 
+- **RAM:** 32 GB
+- **GPU:** NVIDIA GeForce GTX 1080 Ti 11 GB 
 
 
 ## Environment Setup
