@@ -111,42 +111,18 @@ SS-cascade_instance_segmentation/
 │   │   ├── 2016340A_S20201012_0026.jpg
 │   │   │       ⋮
 │   │   └── 2016340A_S20201012_0031.jpg
-
-│   ├── 1M05/
-│   │   ├── Index.dat
-│   │   ├── Slidedat.ini
-│   │   ├── Data0000.dat
-│   │   ├── Data0001.dat
-│   │   ├── Data0002.dat
-│   │   ├── Data0003.dat
-│   │   ├── Data0004.dat
-│   │   │       ⋮
-│   │   └── Data0030.dat
 │   │
-  |   ├── 1M14.mrxs
-  |   └── 1M14/
-│       ├── Index.dat
-│       ├── Slidedat.ini
-│       ├── Data0000.dat
-│       ├── Data0001.dat
-│       ├── Data0002.dat
-│       ├── Data0003.dat
-│       ├── Data0004.dat
-│       │       ⋮
-│       └── Data0035.dat
-│
 ├── work_dirs/cascade_maskrcnn_x50_softsampling/-DATA_NAME-/ - contains instance segmentation models
-|   ├── cascade_maskrcnn_x50_softsampling.py -config file
-|   └── latest.pth - model
-|
+│   │   ├── cascade_maskrcnn_x50_softsampling.py -config file
+│   │   └── latest.pth - model
+│   │
 └── output/-DATA_NAME-/ - inference result is saved here
 
 ```
 
 #### Trainining
-Open the "solver.py" and "voc_layers.py" files to set up the storage location of training models and the location of training list("TrainingList_filter.txt") to use.
 
-Then in a terminal run:
+In a terminal run:
 ```
 cd SS-cascade_instance_segmentation  
 python tools/train.py
