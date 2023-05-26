@@ -129,13 +129,11 @@ python tools/train.py
 ```
 
 #### Testing
-```
-Change "DATA_NAME" with a different data set in :83
+<!-- Change "DATA_NAME" with a different data set in :83
 Change config file in :18
-Change model in :19
-```
+Change model in :19 -->
 
-Then in a terminal run:
+In a terminal run:
 ```
 cd SS-cascade_instance_segmentation  
 python demo/image_demo.py
