@@ -87,14 +87,14 @@ Execution file, configuration file, and models are download from the [zip](https
 
 #### File structure
 ```
-BoneMarrow/
+SS-cascade_instance_segmentation/
 │
 ├── BoneMarrow - execution file
 ├── setting.json - configuration file
 │
 ├── TestImgTemp/ - temp data extraction folder
 |
-├── Data/ - inference data location
+├── data/ - training and testing data location
 │   ├── 1M05.mrxs
 │   ├── 1M05/
 │   │   ├── Index.dat
@@ -127,19 +127,20 @@ BoneMarrow/
 
 ```
 
-#### Inference
-Open the setting.json file to set up the input WSI filename and the GPUs to use.    
-The file format is as follows:  
+#### Trainining
+Open the "solver.py" and "voc_layers.py" files to set up the storage location of training models and the location of training list("TrainingList_filter.txt") to use.
+
+Then in a terminal run:
 ```
-{
-    "DATA": "1M14.mrxs",    //the input WSI filename.
-    "GPU": [0, 1]           //the ID(s) of GPU(s) to use for testing.
-}
+python solver.py
 ```
 
-Then in a terminal run:  
+#### Testing
+Open the "inference_TMA.py" file to set up the storage location of training models and the location of testing list("TestingList_attentionScoring.txt") to use.
+
+Then in a terminal run:
 ```
-./BoneMarrow
+python inference_TMA.py
 ```
 
 
