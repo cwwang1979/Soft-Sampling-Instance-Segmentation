@@ -88,14 +88,30 @@ Execution file, configuration file, and models are download from the [zip](https
 #### File structure
 ```
 SS-cascade_instance_segmentation/
-│
-├── BoneMarrow - execution file
-├── setting.json - configuration file
-│
-├── TestImgTemp/ - temp data extraction folder
-|
-├── data/ - training and testing data location
-│   ├── 1M05.mrxs
+
+├── data/-DATA_NAME-/ - training and testing data location
+│   ├── annotations/
+│   │   ├── instances_train.json
+│   │   ├── instances_val.json
+│   ├── train/
+│   │   ├── 125121A_S20200928_0001.jpg
+│   │   ├── 125121A_S20200928_0002.jpg
+│   │   ├── 125121A_S20200928_0003.jpg
+│   │   │       ⋮
+│   │   └── 2004994A_S20201013_0002.jpg
+│   ├── val/
+│   │   ├── 2004994A_S20201013_0003.jpg
+│   │   ├── 2004994A_S20201013_0004.jpg
+│   │   ├── 2004994A_S20201013_0005.jpg
+│   │   │       ⋮
+│   │   └── 2004994A_S20201013_0018.jpg
+│   ├── test/
+│   │   ├── 2006683A_S20201014_0021.jpg
+│   │   ├── 2008522H_S20201013_0014.jpg
+│   │   ├── 2016340A_S20201012_0026.jpg
+│   │   │       ⋮
+│   │   └── 2016340A_S20201012_0031.jpg
+
 │   ├── 1M05/
 │   │   ├── Index.dat
 │   │   ├── Slidedat.ini
@@ -107,8 +123,8 @@ SS-cascade_instance_segmentation/
 │   │   │       ⋮
 │   │   └── Data0030.dat
 │   │
-|   ├── 1M14.mrxs
-|   └── 1M14/
+  |   ├── 1M14.mrxs
+  |   └── 1M14/
 │       ├── Index.dat
 │       ├── Slidedat.ini
 │       ├── Data0000.dat
@@ -119,11 +135,11 @@ SS-cascade_instance_segmentation/
 │       │       ⋮
 │       └── Data0035.dat
 │
-├── Model/ - contains detection models
-|   ├── BMntu10mix_9_i90w
-|   └── NTU_ROI_i10w
+├── work_dirs/cascade_maskrcnn_x50_softsampling/-DATA_NAME-/ - contains instance segmentation models
+|   ├── cascade_maskrcnn_x50_softsampling.py -config file
+|   └── latest.pth - model
 |
-└── Result/ - inference result is saved here
+└── output/-DATA_NAME-/ - inference result is saved here
 
 ```
 
@@ -132,21 +148,25 @@ Open the "solver.py" and "voc_layers.py" files to set up the storage location of
 
 Then in a terminal run:
 ```
-python solver.py
+cd SS-cascade_instance_segmentation  
+python tools/train.py
 ```
 
 #### Testing
-Open the "inference_TMA.py" file to set up the storage location of training models and the location of testing list("TestingList_attentionScoring.txt") to use.
+Change "DATA_NAME" with a different data set in :83
+Change config file in :18
+Change model in :19
 
 Then in a terminal run:
 ```
-python inference_TMA.py
+cd SS-cascade_instance_segmentation  
+python demo/image_demo.py
 ```
 
 
-## License
+<!-- ## License
 This extension to the Caffe library is released under a creative commons license, which allows for personal and research use only. For a commercial license please contact Prof Ching-Wei Wang. You can view a license summary here:  
-http://creativecommons.org/licenses/by-nc/4.0/
+http://creativecommons.org/licenses/by-nc/4.0/ -->
 
 
 ## Contact
