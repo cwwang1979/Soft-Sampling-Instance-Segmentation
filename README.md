@@ -83,7 +83,7 @@ pip install -v -e .
 ```
 
 #### Download
-Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1Fc_QiMBoT5AYqoNXZKgNRWilRBP39_5l/view?usp=share_link) file.  (For reviewers, please use the manuscript number M...........R1 as the password to decompress the file.)
+Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1Fc_QiMBoT5AYqoNXZKgNRWilRBP39_5l/view?usp=share_link) file.  (For reviewers, please use the manuscript number C....... as the password to decompress the file.)
 
 #### File structure
 ```
