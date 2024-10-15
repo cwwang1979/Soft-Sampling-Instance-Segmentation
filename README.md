@@ -7,36 +7,6 @@ Wang et al. (In press) Automated quantification of HER2 amplification levels usi
 
 <img width="1299" src="CMRCNN_architecture.png">
 
-## Cloud Demo
-AI inference process and results are shown in the dmeo [video](https://drive.google.com/file/d/1BnJMrl5gJLrLxgFycA2eJXmcHHZ_dKyG/view?usp=sharing).
-
-#### Device specifications
-- **CPU:** Intel Xeon Gold 6148
-- **RAM:** 512 GB
-- **GPU:** NVIDIA TITAN RTX 24 GB * 4
-
-#### Time consumption
-- **Data extraction time:** 328 seconds
-- **AI Inference time:** 336 seconds
-
-In the cloud demo, the system gets a WSI file from the remote NAS, and hence the data extraction time takes more than the workstation demo.
-
-
-## Workstation Demo
-AI inference process and results as follows with demo data 1M14.mrxs.
-##### ![result](result_screenshot.png)
-
-#### Device specifications
-- **CPU:** Intel Core i9-7900X
-- **RAM:** 128 GB
-- **GPU:** NVIDIA GeForce GTX 1080 Ti 11 GB * 2
-
-#### Time consumption
-- **Data extraction time:** 6 seconds
-- **AI Inference time:** 94 seconds
-
-In the workstation demo, the WSI file is stored locally, and hence the data extraction time takes less than the cloud demo. -->
-
 ## Available hardware
 - **CPU:** Intel® Core™ i7-8700K 
 - **RAM:** 32 GB
