@@ -1,10 +1,10 @@
 # Soft-Sampling Cascade Instance segmentation
 
-<img width="1299" src="CMRCNN_architecture.png">
-
 ## Associated paper
 Wang et al. (In press) Automated quantification of HER2 amplification levels using deep learning, IEEE Journal of Biomedical and Health Informatics (JCR 2023: IF= 6.7, Q1 3/44 MEDICAL INFORMATICS) 
 If you use any materials here, please cite our publication.  
+
+<img width="1299" src="CMRCNN_architecture.png">
 
 ## Cloud Demo
 AI inference process and results are shown in the dmeo [video](https://drive.google.com/file/d/1BnJMrl5gJLrLxgFycA2eJXmcHHZ_dKyG/view?usp=sharing).
