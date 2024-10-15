@@ -2,8 +2,8 @@
 
 <img width="1299" src="CMRCNN_architecture.png">
 
-<!-- ## Associated paper
-Wang C.*, Huang S., Lee Y., Shen Y., Meng S., Gaol J.(2022) Deep Learning for Bone Marrow Cell Detection and Classification on Whole-Slide Images, Medical Image Analysis, vol 75, 102270, 1-15 (SCI IF=13.828, 2/113 COMP. SCI., INTER. APP.). 
+## Associated paper
+Wang et al. (In press) Automated quantification of HER2 amplification levels using deep learning, IEEE Journal of Biomedical and Health Informatics (JCR 2023: IF= 6.7, Q1 3/44 MEDICAL INFORMATICS) 
 If you use any materials here, please cite our publication.  
 
 ## Cloud Demo
