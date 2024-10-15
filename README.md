@@ -2,7 +2,8 @@
 
 ## Associated paper
 Wang et al. (In press) Automated quantification of HER2 amplification levels using deep learning, IEEE Journal of Biomedical and Health Informatics (JCR 2023: IF= 6.7, Q1 3/44 MEDICAL INFORMATICS) 
-If you use any materials here, please cite our publication.  
+
+**If you use any materials here, please cite our publication.**  
 
 <img width="1299" src="CMRCNN_architecture.png">
 
